@@ -11,5 +11,5 @@ loop(Dir) ->
             Full = filename:join(Dir, File),
             Client ! {self(), file:read_file(Full)}
     end,
-    loop(Dir).
+    loop(Dir). 
 
